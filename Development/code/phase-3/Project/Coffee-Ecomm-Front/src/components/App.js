@@ -5,7 +5,7 @@ function App() {
     const [videos, setVideos] = useState([])
 
     useEffect(() => {
-      fetch("http://localhost:7001/videos")
+      fetch("http://localhost:3000/videos")
         .then((response) => response.json())
         .then((videos) => setVideos(videos));
     }, []);
